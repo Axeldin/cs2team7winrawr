@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Stats {
+
+	 public static void main(String args[])
+	    {
+		 int ATK, DEF, userHP, DMG, TDMG, cpuHP;
+	       Scanner scan = new Scanner(System.in);
+	    }
+	System.out.println("Please select a number from 1 through 50 for your ATK stat:");
+	ATK = input.nextInt();
+	DEF = 50 - ATK
+	
+	if (ATK + DEF > 50) {
+		System.out.println("ERROR!!  Please use values that equal to 50");
+		
+		userHP = 100;
+		cpuHP = 100;
+		 DMG = ATK + userroll;
+	       System.out.println(name1 + "Attemps to do" + DMG + "to" cpu + ".");
+	       System.out.println(cpu + "absorbs" + DEF + "of the attack."); 
+	       TDMG = DMG - DEF
+	       System.out.println(name1 + "deals" + TDMG + "of total damage to" + cpu ".");
+	       cpuHP = cpuHP - TDMG
+	    		   
+	     DMG = ATK + cpuroll;
+	       System.out.println(cpu + "Attemps to do" + DMG + "to" name1 + ".");
+	       System.out.println(name1 + "absorbs" + DEF + "of the attack."); 
+	       TDMG = DMG - DEF
+	       System.out.println(cpu + "deals" + TDMG + "of total damage to" + name1 ".");
+	    		   userHP = userHP - TDMG
+	    		   
+	
+				if (userHP <= 0) {
+					System.out.println(name1 + "has been defeated by" + cpu + "." + "Game Over");
+					if (cpuHP <= 0) {
+						System.out.println(cpu + "has been defeated by" + name1 + "." + "You Win!");
+					}
+				}
+}
+}
